@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { MdContext } from './components/Context';
+import { MdContextType } from './lib/types';
+import AppNavigator from './AppNavigator';
 
 export default function App() {
+  const [inputData, setInputData] = useState<string>('');
+
+  const input = (info: string) => {
+    setInputData(info);
+  };
+
+  const clear = () => {
+    setInputData('');
+  };
+
+  const mdContext: MdContextType = {
+    mdinput: inputData, 
+    input: input, 
+    clear: clear
+  };
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <MdContext.Provider value={mdContext}>
+       <AppNavigator />
+    </MdContext.Provider>
   );
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
