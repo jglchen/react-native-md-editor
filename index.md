@@ -23,3 +23,4 @@ Markdown is not a syntax that an average user will be familiar with, nor is it v
 ### Docker: docker run -p 3000:3000 jglchen/react-md-editor
 ### back To [Series Home](https://jglchen.github.io/)
 
+{% include giscus.html %}
