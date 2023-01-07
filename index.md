@@ -14,7 +14,7 @@ Markdown is not a syntax that an average user will be familiar with, nor is it v
 
 **iOS** and **Android** mobile apps are developed with **React Native**, anyone who is interested can test the apps through the [Expo Publish Link](https://expo.dev/@jglchen/md-editor) with [Expo Go](https://expo.dev/client) app.
 
-[![react-native_md-editor-screenshot](/images/react-native_md-editor-screenshot.png)](https://expo.dev/@jglchen/md-editor)
+[![react-native-md-editor-screenshot](/images/react-native-md-editor-screenshot.png)](https://expo.dev/@jglchen/md-editor)
 
 ### [React Native Expo Publish](https://expo.dev/@jglchen/md-editor)
 ### [React Native GitHub](https://github.com/jglchen/react-native-md-editor)
